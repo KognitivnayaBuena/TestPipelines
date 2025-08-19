@@ -5,7 +5,7 @@ describe('Login Flow', () => {
       cy.get('input[name="password"]').type('password123');
       cy.get('button[type="submit"]').click();
       cy.url().should('include', '/dashboard');
-      cy.contains('Welcome, testuser!');
+      cy.contains('Welcome, test user!');
     });
   });
   
